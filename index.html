@@ -145,6 +145,10 @@ svg.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;str
 .group-name{font-weight:600;font-size:15px}
 .group-count{color:var(--ink-soft);font-size:13px}
 .group-sum{margin-left:auto;font-weight:600;font-size:14.5px}
+.group-add{display:inline-flex;align-items:center;gap:4px;height:30px;padding:0 10px;border-radius:999px;border:1px solid #C5D9C8;background:var(--sage-soft);color:var(--sage-deeper);font-size:12.5px;font-weight:600;white-space:nowrap;flex:none;transition:background .2s,border-color .2s,transform .1s}
+.group-add:hover{background:#DCE9DD;border-color:#9DBBA5}
+.group-add:active{transform:scale(.95)}
+.group-add svg{width:14px;height:14px;stroke-width:2.3}
 .items{display:grid;gap:8px;min-height:12px}
 .item{display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;grid-template-areas:"drag check main price" "drag check step actions";align-items:center;gap:4px 8px;padding:8px 10px 8px 4px;border-radius:20px;background:#FDFBF8;border:1px solid var(--line);transition:background .25s,border-color .25s,box-shadow .25s}
 .item:hover{border-color:#DDD5CA}
@@ -272,6 +276,7 @@ dialog[open] .sheet{animation:sheet-in .28s cubic-bezier(.2,.8,.2,1)}
 @media (max-width:639px){.item{grid-template-areas:"drag check main price" "drag check actions step";column-gap:6px;row-gap:6px;padding:8px 10px 8px 2px}.drag-handle{width:24px;min-height:0}.check{width:40px;height:40px}.item-name{font-size:14.5px}.item-price{font-size:14.5px;align-self:start;padding-top:2px}.item-actions{justify-self:start;justify-content:flex-start;align-self:center;gap:0;margin-left:-6px}.item-actions .icon-btn{width:36px;height:36px}.stepper{justify-self:end;align-self:center;margin-top:2px;padding:1px}.stepper button{width:30px;height:30px}.stepper svg{width:14px;height:14px}.qty{min-width:48px;padding:0 4px;font-size:12.5px}}
 @media (max-width:639px){.topbar-inner{padding:8px 12px;gap:6px}.brand-mark{width:36px;height:36px}.month{padding:2px}.month button{width:34px;height:34px}.month-label{min-width:76px;font-size:13.5px}.lang{padding:2px}.lang button{min-width:32px;height:36px;padding:0 6px}.account-btn{width:40px;height:40px;min-width:40px;padding:0;justify-content:center;gap:0;border-radius:50%}}
 @media (max-width:639px){.group-head{gap:8px}.group-count,.group-sum{white-space:nowrap}.group-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+@media (max-width:520px){.group-add{width:32px;height:32px;padding:0;justify-content:center}.group-add span{display:none}}
 </style>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
